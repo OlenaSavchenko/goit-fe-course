@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display", "Arial", serif;
+  color: #626262;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* header */
+.header-nav {
+  padding-top: 70px;
+  padding-bottom: 94px;
+}
+.header-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0px;
+}
+.header-list li {
+  display: inline-block;
+}
+
+.header-list-item-1 {
+  margin-right: 124px;
+}
+.header-list-item-2 {
+  margin-right: 104px;
+}
+.header-list-item-3 {
+  margin-right: 96px;
+}
+.header-list a {
+  display: inline-block;
+  color: #626262;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+.header-list a:hover,
+.header-list a:focus {
+  color: #03a9f4;
+}
+
+/* main section */
+
+.article-container {
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+.article {
+  display: inline-block;
+  margin-right: 60px;
+  margin-bottom: 134px;
+  width: 420px;
+}
+.article:nth-child(2n) {
+  margin-right: 0px;
+}
+.article:nth-last-child(-n+2)
+{
+  margin-bottom: 54px;
+}
+.img {
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+
+.inscription {
+  font-size: 14px;
+  line-height: 16px;
+  color: #b4ad9e;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 26px 0;
+  padding: 0;
+}
+
+.article-header {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0 0 34px 0;
+  padding: 0;
+}
+
+.article-paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0;
+}
+
+.button {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 auto 70px auto;
+  padding: 20px 32px;
+  width: 166px;
+  border: 1px solid #626262;
+  color: #626262;
+  background: transparent;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  color: #03a9f4;
+}
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
