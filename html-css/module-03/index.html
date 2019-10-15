@@ -19,33 +19,39 @@
     <title>Module-3</title>
   </head>
   <body>
-    <!-- header -->
-    <div class="wrapper">
-      <header class="container">
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-list-item-1"><a href="#">lifestyle</a></li>
-            <li class="header-list-item-2"><a href="#">photodairy</a></li>
-            <li class="header-list-item-3"><a href="#">music</a></li>
-            <li class="header-list-item-4"><a href="#">travel</a></li>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--1">
+              <a href="#" class="menu__link">lifestyle</a>
+            </li>
+            <li class="menu__item menu__item--2">
+              <a href="#" class="menu__link">photodairy</a>
+            </li>
+            <li class="menu__item menu__item--3">
+              <a href="#" class="menu__link">music</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">travel</a></li>
           </ul>
         </nav>
       </header>
       <!-- main section-->
-      <main class="container">
+      <main>
         <h1 class="visuallyhidden">Our site</h1>
-        <div class="article-container">
+        <section class="inner">
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/dancing-girl.jpg"
               alt="dancing girl"
               width="420"
               height="280"
             />
-            <p class="inscription">lifestyle</p>
-            <h2 class="article-header">More than just a music festival</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">lifestyle</p>
+            <h2 class="article__headline">More than just a music festival</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -53,15 +59,15 @@
           </article>
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/cup-of-coffee.jpg"
               alt="cup of coffee"
               width="420"
               height="280"
             />
-            <p class="inscription">lifestyle</p>
-            <h2 class="article-header">Life tastes better with coffee</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">lifestyle</p>
+            <h2 class="article__headline">Life tastes better with coffee</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -69,15 +75,15 @@
           </article>
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/two-girls.jpg"
               alt="two girls"
               width="420"
               height="280"
             />
-            <p class="inscription">photodairy</p>
-            <h2 class="article-header">American dream</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">photodairy</p>
+            <h2 class="article__headline">American dream</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -85,15 +91,15 @@
           </article>
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/somebody.jpg"
               alt="somebody"
               width="420"
               height="280"
             />
-            <p class="inscription">photodairy</p>
-            <h2 class="article-header">A day exploring the Alps</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">photodairy</p>
+            <h2 class="article__headline">A day exploring the Alps</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -101,15 +107,15 @@
           </article>
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/girl.jpg"
-              alt="somebody"
+              alt="girl"
               width="420"
               height="280"
             />
-            <p class="inscription">lifestyle</p>
-            <h2 class="article-header">Top 10 song for running</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">lifestyle</p>
+            <h2 class="article__headline">Top 10 song for running</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -117,22 +123,22 @@
           </article>
           <article class="article">
             <img
-              class="img"
+              class="article__picture"
               src="./img/road.jpg"
-              alt="somebody"
+              alt="road"
               width="420"
               height="280"
             />
-            <p class="inscription">lifestyle</p>
-            <h2 class="article-header">Cold winter days</h2>
-            <p class="article-paragraph">
+            <p class="article__inscription">lifestyle</p>
+            <h2 class="article__headline">Cold winter days</h2>
+            <p class="article__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
           </article>
-        </div>
-        <button class="button container" type="button">Load more</button>
+          <button class="btn" type="button">Load more</button>
+        </section>
       </main>
     </div>
   </body>

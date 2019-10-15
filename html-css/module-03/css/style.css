@@ -1,47 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Playfair Display", "Arial", serif;
+  color: #626262;
+  line-height: 1.2;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.wrapper {
-  font-family: "Playfair Display", "Arial", serif;
-  color: #626262;
-  box-sizing: border-box;
+.container {
   width: 900px;
   margin: 0 auto;
 }
-
-.container
-{
-  margin: 0 auto; 
-}
-
 /* header */
-.header-nav {
+.menu {
   padding-top: 70px;
   margin-bottom: 94px;
 }
-.header-list {
+.menu__list {
   padding: 0;
   text-align: center;
-  font-size: 0px;
-  list-style-type: none;
   vertical-align: middle;
+  font-size: 0px;
 }
-.header-list li {
+.menu__item {
   display: inline-block;
 }
 
-.header-list-item-1 {
+.menu__item--1 {
   margin-right: 124px;
 }
-.header-list-item-2 {
+.menu__item--2 {
   margin-right: 104px;
 }
-.header-list-item-3 {
+.menu__item--3 {
   margin-right: 96px;
 }
-.header-list a {
+.menu__link {
   display: block;
   color: #626262;
   font-weight: 400;
@@ -50,18 +55,18 @@ img {
   font-size: 14px;
   line-height: 24px;
 }
-.header-list a:hover,
-.header-list a:focus,
-.button:hover,
-.button:focus {
+.menu__link:hover,
+.menu__link:focus,
+.btn:hover,
+.btn:focus {
   color: #03a9f4;
 }
 
-/* main-section */
+/* main ection */
 
-.article-container {
+.inner {
+  padding-bottom: 70px;
   font-size: 0px;
-  margin: 0 auto;
 }
 
 .article {
@@ -76,43 +81,41 @@ img {
 .article:nth-last-child(-n + 2) {
   margin-bottom: 54px;
 }
-.img {
+.article__picture {
   margin: 0 0 28px 0;
 }
 
-.inscription {
-  margin: 0 0 26px 0;
+.article__inscription {
   font-size: 14px;
-  line-height: 16px;
   color: #b4ad9e;
   font-family: "Ubuntu", "Arial", sans-serif;
   text-transform: uppercase;
+  margin: 0 0 26px 0;
 }
 
-.article-header {
-  margin: 0 0 34px 0;
+.article__headline {
   font-size: 30px;
-  line-height: 36px;
   font-weight: 400;
+  margin: 0 0 34px 0;
 }
 
-.article-paragraph {
-  margin: 0;
+.article__text {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
-.button {
+.btn {
   display: block;
-  margin: 0 auto 70px auto;
-  padding: 20px 32px;
-  width: 166px;
   font-size: 20px;
   line-height: 24px;
+  padding: 20px 32px;
+  width: 166px;
   border: 1px solid #626262;
   color: #626262;
   background: transparent;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
