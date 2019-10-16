@@ -19,16 +19,17 @@ img {
   height: auto;
 }
 .container {
-  width: 900px;
   margin: 0 auto;
+  width: 900px;
 }
 /* header */
 .menu {
   padding-top: 70px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .menu__list {
   padding: 0;
+
   text-align: center;
   vertical-align: middle;
   font-size: 0px;
@@ -48,12 +49,13 @@ img {
 }
 .menu__link {
   display: block;
-  color: #626262;
+
   font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
   font-size: 14px;
   line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #626262;
 }
 .menu__link:hover,
 .menu__link:focus,
@@ -62,60 +64,67 @@ img {
   color: #03a9f4;
 }
 
-/* main ection */
+/* main section */
 
-.inner {
+.article__box {
   padding-bottom: 70px;
+
   font-size: 0px;
 }
 
 .article {
-  display: inline-block;
   margin-right: 60px;
   margin-bottom: 134px;
+  display: inline-block;
   width: 420px;
 }
 .article:nth-child(2n) {
   margin-right: 0px;
 }
-.article:nth-last-child(-n + 2) {
+.article:nth-last-of-type(-n + 2) {
   margin-bottom: 54px;
 }
 .article__picture {
-  margin: 0 0 28px 0;
+  margin-bottom: 28px;
 }
 
 .article__inscription {
-  font-size: 14px;
-  color: #b4ad9e;
-  font-family: "Ubuntu", "Arial", sans-serif;
-  text-transform: uppercase;
   margin: 0 0 26px 0;
+
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
 }
 
 .article__headline {
+  margin: 0 0 34px 0;
+
   font-size: 30px;
   font-weight: 400;
-  margin: 0 0 34px 0;
 }
 
 .article__text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
-  margin: 0;
 }
 
 .btn {
+  margin: 0 auto;
+  padding: 17px 32px;
   display: block;
+  width: 164px;
+
   font-size: 20px;
   line-height: 24px;
-  padding: 20px 32px;
-  width: 166px;
-  border: 1px solid #626262;
   color: #626262;
+
   background: transparent;
+  border: 1px solid #626262;
+
   cursor: pointer;
-  margin: 0 auto;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
