@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -18,22 +19,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .container {
   margin: 0 auto;
   width: 900px;
 }
+
 /* header */
 .menu {
   padding-top: 70px;
   padding-bottom: 94px;
 }
+
 .menu__list {
   padding: 0;
-
   text-align: center;
   vertical-align: middle;
   font-size: 0px;
 }
+
 .menu__item {
   display: inline-block;
 }
@@ -41,15 +45,17 @@ img {
 .menu__item--1 {
   margin-right: 124px;
 }
+
 .menu__item--2 {
   margin-right: 104px;
 }
+
 .menu__item--3 {
   margin-right: 96px;
 }
+
 .menu__link {
   display: block;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -57,6 +63,7 @@ img {
   text-decoration: none;
   color: #626262;
 }
+
 .menu__link:hover,
 .menu__link:focus,
 .btn:hover,
@@ -68,7 +75,6 @@ img {
 
 .article__box {
   padding-bottom: 70px;
-
   font-size: 0px;
 }
 
@@ -78,19 +84,21 @@ img {
   display: inline-block;
   width: 420px;
 }
+
 .article:nth-child(2n) {
   margin-right: 0px;
 }
+
 .article:nth-last-of-type(-n + 2) {
   margin-bottom: 54px;
 }
+
 .article__picture {
   margin-bottom: 28px;
 }
 
 .article__inscription {
   margin: 0 0 26px 0;
-
   font-family: "Ubuntu", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -99,14 +107,12 @@ img {
 
 .article__headline {
   margin: 0 0 34px 0;
-
   font-size: 30px;
   font-weight: 400;
 }
 
 .article__text {
   margin: 0;
-
   font-size: 14px;
   line-height: 24px;
 }
@@ -116,28 +122,22 @@ img {
   padding: 17px 32px;
   display: block;
   width: 164px;
-
   font-size: 20px;
   line-height: 24px;
   color: #626262;
-
   background: transparent;
   border: 1px solid #626262;
-
   cursor: pointer;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
