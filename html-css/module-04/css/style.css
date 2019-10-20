@@ -75,7 +75,7 @@ img {
 }
 
 .products__header {
-  margin: 0 auto 132px;
+  margin: 0 auto 92px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 900;
   font-size: 48px;
@@ -151,13 +151,13 @@ img {
   background-color: rgb(140, 140, 140);
 }
 
-/* latest news */
+/*  news */
 .news__container {
   padding-bottom: 82px;
 }
 
 .news__header {
-  margin: 0 auto 118px;
+  margin: 0 auto 82px;
   text-align: center;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 900;
@@ -192,7 +192,7 @@ img {
 }
 
 .article__header {
-  margin: 0 0 38px;
+  margin: 0 0 30px;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -209,7 +209,7 @@ img {
 
 .article__text {
   margin: 0 0 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #555252;
