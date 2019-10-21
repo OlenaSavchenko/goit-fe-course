@@ -32,7 +32,7 @@ img {
 /* header */
 .menu {
   padding-top: 40px;
-  margin-bottom: 104px;
+  padding-bottom: 104px;
 }
 
 .site__logo {
@@ -70,7 +70,7 @@ img {
 }
 
 /* products */
-.products__container {
+.products {
   margin-bottom: 104px;
 }
 
@@ -152,7 +152,7 @@ img {
 }
 
 /*  news */
-.news__container {
+.news {
   padding-bottom: 82px;
 }
 
@@ -226,8 +226,13 @@ img {
   color: #ffffff;
   background-color: rgb(78, 198, 171);
   border-radius: 3px;
-  border: 0px;
+  border: 0;
   cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: rgb(26, 188, 156);
 }
 
 .visuallyhidden:not(:focus):not(:active) {
