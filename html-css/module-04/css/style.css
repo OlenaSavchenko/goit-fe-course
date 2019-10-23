@@ -138,6 +138,10 @@ img {
   background: rgb(127, 217, 199);
 }
 
+.products__picture {
+  background-color: rgb(233, 240, 253);
+}
+
 .item__header,
 .products_price {
   height: 40px;
