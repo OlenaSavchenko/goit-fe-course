@@ -35,7 +35,9 @@ img {
   padding-bottom: 102px;
 }
 
-.logo_link {
+.logo_link,
+.products__link,
+.btn {
   display: inline-block;
   text-decoration: none;
 }
@@ -64,7 +66,9 @@ img {
 
 .menu__item,
 .products__item,
-.news__item {
+.news__item,
+.products__link,
+.products_price {
   float: left;
 }
 
@@ -88,7 +92,7 @@ img {
 
 /* products */
 .products {
-  margin-bottom: 104px;
+  padding-bottom: 104px;
 }
 
 .products__header {
@@ -128,12 +132,9 @@ img {
   margin-bottom: 30px;
 }
 
-.products__item:hover .item__header {
-  background: rgb(26, 188, 156);
-}
-
+.products__item:hover .item__header,
 .products__item:hover .products_price {
-  background: rgb(127, 217, 199);
+  background: rgb(26, 188, 156);
 }
 
 .products__picture {
@@ -142,27 +143,24 @@ img {
 
 .item__header,
 .products_price {
-  height: 40px;
   margin: 0;
   padding-left: 14px;
-  padding-top: 4px;
-  float: left;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 900;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+  background-color: rgb(50, 50, 50);
 }
 
 .item__header {
   width: 201px;
-  background-color: rgb(50, 50, 50);
 }
 
 .products_price {
   width: 54px;
-  background-color: rgb(140, 140, 140);
+  opacity: 0.44;
 }
 
 /*  news */
@@ -240,4 +238,3 @@ img {
 .btn:focus {
   background: rgb(26, 188, 156);
 }
-
