@@ -68,7 +68,7 @@ img {
 .menu__item,
 .products__item,
 .news__item,
-.products__link,
+.item__header,
 .products_price {
   float: left;
 }
@@ -153,14 +153,14 @@ img {
   background-color: rgb(50, 50, 50);
 }
 
-.products__link {
-  width: 201px;
-  color: rgb(255, 255, 255);
-}
-
 .item__header {
+  width: 201px;
   margin: 0;
   padding-left: 14px;
+}
+
+.products__link {
+  color: rgb(255, 255, 255);
 }
 
 .products_price {
