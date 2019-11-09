@@ -19,8 +19,8 @@ img {
 }
 
 .container {
+  width: 1110px;
   margin: 0 auto;
-  width: 100vw;
 }
 
 .clearfix::after {
@@ -30,12 +30,6 @@ img {
 }
 
 /* header */
-.menu,
-.slides__content,
-.products__list {
-  width: 1110px;
-  margin: 0 auto;
-}
 
 .menu {
   padding: 38px 0 28px;
@@ -121,28 +115,32 @@ img {
 }
 
 .slides__content {
-  position: absolute;
-  top: 45%;
+  position: relative;
+  /* top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
-  height: 138px;
+  z-index: 2; */
+  *//* height: 138px; */
+  margin: 0 auto;
 }
 
 .slides__header {
+  /* position: relative; */
   position: absolute;
-  width: 764px;
+  /* width: 764px; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   margin: 0 auto;
+
+  /* transform: translate(-50%, -50%); */
+  /* margin: 0 auto;  */
   font-family: "Roboto", "Arial", sans-serif;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
 .slider__title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 60px;
   line-height: 82px;
   font-weight: 900;
@@ -150,29 +148,30 @@ img {
 }
 
 .slider__descr {
-  margin: 0;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 54px;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
 }
 
 .slider__btn {
-  position: absolute;
+  /* position: absolute;
   top: 55%;
   transform: translateY(-50%);
-  z-index: 3;
+  z-index: 3; */
   width: 105px;
   height: 105px;
   background-color: rgba(78, 198, 171, 65%);
   cursor: pointer;
+  border: 0 solid;
 }
 
 .slider__btn-prev {
-  left: 0;
+  float: left;
 }
 .slider__btn-next {
-  right: 0;
+  float: right;
 }
 
 .slider__btn:hover {
@@ -248,24 +247,24 @@ img {
   background-color: rgb(233, 240, 253);
 }
 
-.item__header,
-.products_price {
-  height: 40px;
+.products__title {
   margin: 0;
-  padding-left: 14px;
-  padding-top: 4px;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 900;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+  background-color: rgb(50, 50, 50);
 }
 
 .item__header {
   width: 201px;
-  background-color: rgb(50, 50, 50);
+  margin: 0;
+  padding-left: 14px;
 }
+
 .products__link {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -273,7 +272,8 @@ img {
 
 .products_price {
   width: 54px;
-  background-color: rgb(140, 140, 140);
+  padding-left: 14px;
+  background-color: rgba(255, 255, 255, 44%);
 }
 
 .icon__overlay {
@@ -348,7 +348,7 @@ img {
 .footer__container {
   height: 90px;
   background-color: rgb(50, 50, 50);
-  }
+}
 
 .copyright {
   display: block;
@@ -356,7 +356,7 @@ img {
   padding-top: 30px;
   width: 360px;
   font-size: 14px;
-   color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
   text-align: center;
 }
