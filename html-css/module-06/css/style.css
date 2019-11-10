@@ -12,11 +12,6 @@ html {
   margin: 0;
   padding: 0;
 }
-body {
-  /* font-family: 'Montserrat', "Arial", sans-serif; */
-  /* font-family: 'Kaushan Script', "Arial", cursive;
-font-family: 'Roboto', "Arial", sans-serif; */
-}
 
 img {
   display: block;
@@ -47,6 +42,7 @@ img {
 .logo {
   margin: 0;
 }
+
 .logo_link {
   font-family: var(--main-ff);
   color: var(--green-dec-color);
@@ -59,8 +55,8 @@ img {
 .services__list,
 .team__list,
 .icon__list {
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
 .menu__list {
@@ -91,12 +87,12 @@ img {
 
 .menu__link::after {
   content: "";
+  margin-top: 8px;
   position: absolute;
   display: none;
   width: 100%;
   height: 3px;
   background-color: var(--red-dec-color);
-  margin-top: 8px;
   transition: color 200ms linear;
 }
 
@@ -175,31 +171,27 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  background-repeat: no-repeat;
   display: block;
   width: 32px;
   height: 32px;
+  background-repeat: no-repeat;
 }
 
 .icon--photography::before {
   background-image: url(../img/png/alarm.png);
 }
-
 .icon--web-design::before {
   background-image: url(../img/png/line-graph.png);
 }
-
 .icon--creativity::before {
   background-image: url(../img/png/computer.png);
 }
-
 .icon--seo::before {
   background-image: url(../img/png/book.png);
 }
 .icon--css-html::before {
   background-image: url(../img/png/home.png);
 }
-
 .icon--digital::before {
   background-image: url(../img/png/frame.png);
 }
@@ -222,10 +214,6 @@ img {
   margin-bottom: 42px;
 }
 
-.team__list {
-  justify-content: space-between;
-}
-
 .team__descr {
   margin: 0 auto;
   width: 946px;
@@ -233,28 +221,42 @@ img {
   text-align: center;
 }
 
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team--photo__container {
   position: relative;
-  width: 380px;
-  height: 470px;
-  background: #95e1d3;
-  z-index: 2;
+  background-color: var(--green-dec-color);
 }
 
 .team--member__photo {
-   width: 380px;
-  height: 470px;
-  z-index: 3;
+  transition: all 200ms linear;
+}
+.team__item:hover .team--member__photo {
+  transform: translate(-10px, -10px);
+}
+
+.team--photo__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
   transition: all 200ms linear;
 }
 
-.team--member__container::after {
-  content: " ";
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 6;
+.team__item:hover .team--photo__overlay {
+  display: block;
+  transform: translate(-10px, -10px);
+}
+
+.icon__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -262,43 +264,23 @@ img {
     rgba(252, 227, 138, 90%),
     rgba(243, 129, 129, 90%)
   );
-}
-
-.team--photo__container:hover::after,
-.team--photo__container:focus::after {
-  display: block;
-  transform: translate(-10px, -10px);
-}
-
-.team--photo__container:hover .team--member__photo {
-  transform: translate(-10px, -10px);
-}
-
-.icon__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  transition: all 200ms linear;
-}
-
-.team--photo__container:hover .icon__list {
-  transform: translate(10px, 10px);
+  
 }
 
 .icon__link {
-  background-color: rgb(252, 227, 138);
-  outline: none;
+  display: block;
   width: 56px;
   height: 56px;
   margin-right: 1px;
+  background-color: rgb(252, 227, 138);
+  outline: none;
   transition: all 200ms linear;
 }
 
 .icon__link::after {
-  width: inherit;
-  height: inherit;
+  display: block;
+  width: 56px;
+  height: 56px;
   content: "";
   background-repeat: no-repeat;
   background-position: center;
@@ -307,22 +289,19 @@ img {
 .facebook::after {
   background-image: url(../img/png/facebook.png);
 }
-
 .twitter::after {
   background-image: url(../img/png/twitter.png);
 }
-
 .pinterest::after {
   background-image: url(../img/png/pinterest.png);
 }
-
 .instagram::after {
   background-image: url(../img/png/instagram.png);
 }
 
 .icon__link:hover,
 .icon__link:focus {
-  background-color: rgb(149, 225, 211);
+  background-color: var(--green-dec-color);
 }
 
 .team__memebers {
