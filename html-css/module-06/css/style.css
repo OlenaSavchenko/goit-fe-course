@@ -57,7 +57,8 @@ img {
 
 .menu__list,
 .services__list,
-.team__list {
+.team__list,
+.icon__list {
   list-style: none;
   display: flex;
 }
@@ -93,7 +94,7 @@ img {
   position: absolute;
   display: none;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: var(--red-dec-color);
   margin-top: 8px;
   transition: color 200ms linear;
@@ -151,10 +152,10 @@ img {
 }
 
 .services__item {
-   position: relative;
+  position: relative;
   padding-left: 56px;
   flex-basis: 360px;
- }
+}
 
 .services__title,
 .team--member__name,
@@ -226,24 +227,102 @@ img {
 }
 
 .team__descr {
+  margin: 0 auto;
+  width: 946px;
   margin-bottom: 86px;
   text-align: center;
 }
 
-.team--member__photo
-{
+.team--photo__container {
   position: relative;
- 
+  width: 380px;
+  height: 470px;
+  background: #95e1d3;
+  z-index: 2;
 }
 
-.team--member__photo::before {
-  content: "";
+.team--member__photo {
+   width: 380px;
+  height: 470px;
+  z-index: 3;
+  transition: all 200ms linear;
+}
+
+.team--member__container::after {
+  content: " ";
+  display: none;
   position: absolute;
-  background-repeat: no-repeat;
-  background-color: #fce38a;
+  top: 0;
+  bottom: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 90%),
+    rgba(243, 129, 129, 90%)
+  );
+}
+
+.team--photo__container:hover::after,
+.team--photo__container:focus::after {
   display: block;
-  width: 32px;
-  height: 32px;
+  transform: translate(-10px, -10px);
+}
+
+.team--photo__container:hover .team--member__photo {
+  transform: translate(-10px, -10px);
+}
+
+.icon__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  transition: all 200ms linear;
+}
+
+.team--photo__container:hover .icon__list {
+  transform: translate(10px, 10px);
+}
+
+.icon__link {
+  background-color: rgb(252, 227, 138);
+  outline: none;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  transition: all 200ms linear;
+}
+
+.icon__link::after {
+  width: inherit;
+  height: inherit;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook::after {
+  background-image: url(../img/png/facebook.png);
+}
+
+.twitter::after {
+  background-image: url(../img/png/twitter.png);
+}
+
+.pinterest::after {
+  background-image: url(../img/png/pinterest.png);
+}
+
+.instagram::after {
+  background-image: url(../img/png/instagram.png);
+}
+
+.icon__link:hover,
+.icon__link:focus {
+  background-color: rgb(149, 225, 211);
 }
 
 .team__memebers {
@@ -320,7 +399,6 @@ img {
   cursor: pointer;
 }
 .outline:active,
-.outline:focus
- {
+.outline:focus {
   outline: none;
 }
