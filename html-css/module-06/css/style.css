@@ -232,7 +232,7 @@ img {
 }
 
 .team--member__photo {
-  transition: all 200ms linear;
+   transition: all 200ms linear; 
 }
 .team__item:hover .team--member__photo {
   transform: translate(-10px, -10px);
@@ -250,7 +250,7 @@ img {
 
 .team__item:hover .team--photo__overlay {
   display: block;
-  transform: translate(-10px, -10px);
+   transform: translate(-10px, -10px);
 }
 
 .icon__list {
@@ -264,8 +264,7 @@ img {
     rgba(252, 227, 138, 90%),
     rgba(243, 129, 129, 90%)
   );
-  
-}
+    }
 
 .icon__link {
   display: block;
@@ -341,7 +340,8 @@ img {
 .author__link {
   text-decoration: none;
   color: var(--red-dec-color);
-}
+  transition: all 200ms linear;}
+  
 .author__link:hover {
   text-decoration: underline;
 }
