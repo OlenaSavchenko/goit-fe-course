@@ -1,3 +1,13 @@
+
+:root {
+  --main-text-color: rgb(51, 51, 51);
+  --light-text-color: rgb(153, 153, 153);
+  --green-dec-color: rgb(149, 225, 211);
+  --red-dec-color: rgb(243, 129, 129);
+  --main-ff: "Montserrat", "Arial", sans-serif;
+}
+
+
 html {
   box-sizing: border-box;
 }
@@ -22,13 +32,6 @@ img {
 .container {
   margin: 0 auto;
   width: 1212px;
-}
-:root {
-  --main-text-color: rgb(51, 51, 51);
-  --light-text-color: rgb(153, 153, 153);
-  --green-dec-color: rgb(149, 225, 211);
-  --red-dec-color: rgb(243, 129, 129);
-  --main-ff: "Montserrat", "Arial", sans-serif;
 }
 
 /* header */
@@ -100,6 +103,7 @@ img {
 .menu__link:hover::after,
 .menu__link:focus::after {
   display: block;
+  transition: color 200ms linear
 }
 /* services */
 
@@ -155,7 +159,7 @@ img {
 }
 
 .services__subject,
-.team--member__name,
+.team-member__name,
 .copyright {
   font-family: var(--main-ff);
   font-size: 14px;
@@ -178,22 +182,22 @@ img {
   background-repeat: no-repeat;
 }
 
-.icon_alarm::before {
+.icon--alarm::before {
   background-image: url(../img/png/alarm.png);
 }
-.icon_line-graph::before {
+.icon--line-graph::before {
   background-image: url(../img/png/line-graph.png);
 }
-.icon_computer::before {
+.icon--computer::before {
   background-image: url(../img/png/computer.png);
 }
-.icon_book::before {
+.icon--book::before {
   background-image: url(../img/png/book.png);
 }
-.icon_home::before {
+.icon--home::before {
   background-image: url(../img/png/home.png);
 }
-.icon_frame::before {
+.icon--frame::before {
   background-image: url(../img/png/frame.png);
 }
 
@@ -227,22 +231,22 @@ img {
   justify-content: space-between;
 }
 
-.team--photo__container {
+.team-photo__box {
   position: relative;
   width: 380px;
   height: 470px;
 }
 
-.team--member__photo {
+.team-member__photo {
  transition: all 200ms linear;  
 }
-.team__item:hover .team--member__photo {
+.team__item:hover .team-member__photo {
   transform: translate(-10px, -10px);
   transition: all 200ms linear;  
   box-shadow: 10px 10px var(--green-dec-color);
 }
 
-.team--photo__overlay {
+.team-photo__overlay {
    position: absolute; 
   top: 0;
   left: 0;
@@ -259,7 +263,7 @@ img {
   transition-timing-function: linear;
 }
 
-.team__item:hover .team--photo__overlay {
+.team__item:hover .team-photo__overlay {
   display: block;
   transform: translate(-10px, -10px); 
   transition: all 200ms linear; 
@@ -310,7 +314,7 @@ img {
   transition: all 200ms linear;
 }
 
-.team__memebers {
+.team__heading {
   display: table-cell;
   width: 380px;
   height: 102px;
@@ -318,11 +322,11 @@ img {
   vertical-align: middle;
 }
 
-.team--member__name {
+.team-member__name {
   margin-bottom: 8px;
 }
 
-.team--member__position {
+.team-member__position {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -354,18 +358,18 @@ img {
   text-decoration: underline;
 }
 
-.input {
+.email__box {
   display: flex;
   justify-content: flex-end;
 }
-.email--form {
+.email__field {
   width: 228px;
   padding-left: 13px;
   color: var(--main-text-color);
   font-family: var(--main-ff);
   border: 1px solid rgb(229, 229, 229);
 }
-.email--form::placeholder {
+.email__field::placeholder {
   color: rgb(204, 204, 204);
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 15px;
