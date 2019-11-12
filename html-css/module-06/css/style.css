@@ -244,6 +244,7 @@ img {
 .team-member__photo {
  transition: all 200ms linear;  
 }
+
 .team__item:hover .team-member__photo {
   transform: translate(-10px, -10px);
   transition: all 200ms linear;  
