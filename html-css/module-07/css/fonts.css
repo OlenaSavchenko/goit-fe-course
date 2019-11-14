@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/alegreya-italic/alegreya-v13-latin-italic.woff")
+      format("woff"),
+    url(../fonts/alegreya-italic/alegreya-v13-latin-italic.woff2)
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-regular/montserrat-v14-latin-regular.woff")
+      format("woff"),
+    url(../fonts/montserrat-regular/montserrat-v14-latin-regular.woff2)
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/montserrat-bold/montserrat-v14-latin-700.woff")
+      format("woff"),
+    url(../fonts/montserrat-bold/montserrat-v14-latin-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular/roboto-slab-v9-latin-regular.woff")
+      format("woff"),
+    url(../fonts/roboto-slab-regular/roboto-slab-v9-latin-regular.woff2)
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}

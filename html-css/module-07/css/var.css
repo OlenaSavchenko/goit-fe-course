@@ -1,0 +1,10 @@
+:root {
+     --main-text-color:rgb(34, 34, 34);
+    --light-text-color: rgb(119, 119, 119);
+      --yellow-dec-color: rgb(254, 209, 54);
+    --menu-link-ff: "Montserrat", "Arial", sans-serif; 
+    --title-ff: "Montserrat Bold", "Arial", sans-serif; 
+    --subtitle-ff: "Alegreya", "Arial", sans-serif; 
+    --descr-ff: "Roboto Slab", "Arial", sans-serif;
+  }
+  
