@@ -9,12 +9,12 @@
     <title>Module-07</title>
   </head>
   <body>
-    <div class="container">
+    <div>
       <!-- header -->
       <header>
         <nav>
-          <div class="menu__box">
-            <h1 class="logo"><a href="#" class="logo_link"> golden </a></h1>
+          <div class="menu-box container">
+            <h1 class="logo"><a href="#" class="logo__link"> golden </a></h1>
             <ul class="menu__list">
               <li><a href="#" class="menu__link">home</a></li>
               <li><a href="#" class="menu__link">services</a></li>
@@ -28,8 +28,8 @@
       <main>
         <!-- services -->
         <section>
-          <div class="services__box">
-            <div class="services-title__box">
+          <div class="services-box container">
+            <div class="services-box__title">
               <div>
                 <h2 class="title services__title">
                   services
@@ -41,7 +41,6 @@
             </div>
             <ul class="services__list">
               <li class="services__item ">
-               
                 <h3 class="services__subject">e-commerce</h3>
                 <p class="services__descr">
                   Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -50,7 +49,6 @@
                 </p>
               </li>
               <li class="services__item">
-               
                 <h3 class="services__subject">responsive web</h3>
                 <p class="services__descr">
                   Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -59,7 +57,6 @@
                 </p>
               </li>
               <li class="services__item">
-                
                 <h3 class="services__subject">web security</h3>
                 <p class="services__descr">
                   Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -72,8 +69,8 @@
         </section>
         <!-- contacts -->
         <section>
-          <div class="contacts__box">
-            <div class="contacts-title__box">
+          <div class="contacts-box">
+            <div class="contacts-title-box">
               <h2 class="title contacts__title">
                 contact us
               </h2>
@@ -82,52 +79,47 @@
               </p>
             </div>
 
-            <form action="#" method="GET" class="contacts__form">
+            <form action="#" method="GET" class="contacts-form-box container">
               <ul class="contacts-form__list">
                 <li class="contacts-form__item">
                   <input
+                    class="contacts-form"
                     type="text"
                     name="name"
-                    value="name"
                     id="name"
-                    placeholder="your name"
+                    placeholder="your name *"
                     required
                   />
-                  <label for="name"></label>
                 </li>
                 <li class="contacts-form__item">
                   <input
+                    class="contacts-form"
                     type="email"
                     name="email"
-                    value="email"
                     id="email"
-                    placeholder="your e-mail"
+                    placeholder="your e-mail *"
                     required
                   />
-                  <label for="email"></label>
                 </li>
                 <li class="contacts-form__item">
                   <input
+                    class="contacts-form"
                     type="text"
                     name="subject"
-                    value="subject"
                     id="subject"
                     placeholder="subject"
                   />
-                  <label for="subject"></label>
                 </li>
               </ul>
 
               <textarea
                 name="clients-message"
                 id="clients-message"
-                cols="30"
-                rows="10"
-                placeholder="your message"
+                placeholder="your message *"
                 required
-                class="clients-message-form"
+                class="contacts-form clients-message-form"
               ></textarea>
-              <button type="submit" class="btn">send message</button> 
+              <button type="submit" class="btn">send message</button>
             </form>
           </div>
         </section>
