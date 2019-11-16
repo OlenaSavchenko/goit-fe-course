@@ -167,7 +167,7 @@ img {
   background-color: #222222;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom 20px right;
   
 }
 .contacts-box {
