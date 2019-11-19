@@ -1,0 +1,13 @@
+:root {
+  
+
+  --link-ff: "Montserrat Bold", "Arial", sans-serif;
+  --title-ff: "Montserrat Bold", "Arial", sans-serif;
+  --subtitle-ff: "Roboto Regular", "Arial", sans-serif;
+  --main-fs: 14px;
+  --light-text-color: rgb(255, 255, 255);
+  --dark-text-color: rgb(51, 51, 51);
+  --gray-text-color:rgb(102, 102, 102);
+  --link-dec-color: rgb(255, 78, 80);
+  
+}
