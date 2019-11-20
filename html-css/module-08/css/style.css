@@ -169,7 +169,7 @@ img {
 }
 
 .partners__item {
-  min-width: 220px;
+  width: 220px;
 }
 
 .partners__item:not(:last-child) {
@@ -247,3 +247,4 @@ img {
   color: var(--light-text-color);
   transition: all 0.2s linear;
 }
+
