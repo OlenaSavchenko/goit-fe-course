@@ -7,12 +7,12 @@
     padding: 48px 0 234px;
   }
   .general-header {
-    margin: 0;
-    padding-bottom: 152px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    margin: 0;
+    padding-bottom: 152px;
   }
   .header-nav {
     padding: 0;
@@ -70,6 +70,19 @@
   .partners__link {
     margin: 0 auto;
     width: 194px;
-    padding: 12px 10px
+    padding: 12px 10px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+  .partners-box {
+    padding: 68px 0 72px;
+  }
+  .partners__item:nth-child(-n + 1),
+  .partners__item:nth-child(3n)
+  {
+    margin-bottom: 0;
   }
 }

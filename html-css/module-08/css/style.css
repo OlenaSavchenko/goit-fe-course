@@ -36,7 +36,8 @@ img {
 }
 
 .general__overlay {
-  background-color: rgba(6, 25, 21, 50%);
+  background-color: rgba(26, 25, 21, 50%);
+  
 }
 
 .general-box {
@@ -125,6 +126,7 @@ img {
 .general__link {
   border: 2px solid transparent;
   background-color: var(--link-dec-color);
+  transition: all 0.2s linear;
 }
 
 .general__link:hover,
@@ -239,6 +241,7 @@ img {
   font-size: var(--main-fs);
   color: var(--link-dec-color);
   border: 2px solid var(--link-dec-color);
+  transition: all 0.2s linear;
 }
 
 .partners__link:hover,
