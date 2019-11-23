@@ -176,6 +176,7 @@ img {
 
 .partners__item {
   width: 220px;
+  margin: 0 auto;
 }
 
 .partners__photo {
