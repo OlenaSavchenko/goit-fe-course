@@ -37,7 +37,6 @@ img {
 
 .general__overlay {
   background-color: rgba(26, 25, 21, 50%);
-  
 }
 
 .general-box {
@@ -115,7 +114,8 @@ img {
 
 .general__link,
 .partners__link {
-  display: block;
+  margin: 0 auto;
+  display: block;  
   padding: 12px 50px;
   min-height: 40px;
   border-radius: 20px;
@@ -172,10 +172,6 @@ img {
 
 .partners__item {
   width: 220px;
-}
-
-.partners__item:not(:last-child) {
-  margin-bottom: 26px;
 }
 
 .partners__photo {
@@ -250,4 +246,3 @@ img {
   color: var(--light-text-color);
   transition: all 0.2s linear;
 }
-
