@@ -120,7 +120,8 @@ img {
 .partners__link {
   margin: 0 auto;
   display: block;  
-  padding: 12px 50px;
+  padding: 12px 0;
+  max-width: 280px;
   min-height: 40px;
   border-radius: 20px;
   text-align: center;
