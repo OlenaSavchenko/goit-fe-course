@@ -1,7 +1,8 @@
 @media screen and (max-width: 767px) {
   /* general */
   .general-box {
-    padding: 34px 0 134px;
+    padding-top: 34px;
+    padding-bottom: 134px;
   }
 
   .general-header {
@@ -28,7 +29,8 @@
 
   /* partners */
   .partners-box {
-    padding: 66px 0 56px;
+    padding-top: 66px;
+    padding-bottom: 56px;
   }
 
   .partners__list {
@@ -43,7 +45,8 @@
 @media screen and (min-width: 768px) {
   /* general */
   .general-box {
-    padding: 48px 0 234px;
+    padding-top: 48px;
+    padding-bottom: 234px;
   }
 
   .general-header {
@@ -105,6 +108,7 @@
 }
 @media screen and (min-width: 940px) {
   .partners-box {
-    padding: 68px 0 72px;
+    padding-top: 68px;
+    padding-bottom: 72px;
   }
 }
