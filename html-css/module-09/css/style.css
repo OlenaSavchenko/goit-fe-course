@@ -68,7 +68,7 @@ img {
 .log-in__link,
 .sign-up__link {
   min-height: 37px;
-  padding: 10px 18px;
+   padding: 10px 18px; 
   text-align: center;
   border: 2px solid transparent;
   border-radius: 20px;
