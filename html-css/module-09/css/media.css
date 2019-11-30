@@ -104,8 +104,6 @@
 }
 @media screen and (min-width: 940px) {
   .partners-box {
-    /* padding-top: 68px;
-    padding-bottom: 72px; */
-  padding: 68px 10px 72px;
+   padding: 68px 10px 72px;
   }
 }
