@@ -94,6 +94,10 @@ img {
   color: var(--light-text-color);
   text-transform: uppercase;
 }
+.general-title-line {
+  display: block;
+}
+
 
 .general-subtitle {
   font-family: var(--subtitle-ff);
@@ -117,7 +121,7 @@ img {
 
 .general__link:hover,
 .general__link:focus {
-  background-color: var(--light-text-color);
+  background-color: lighten var(--link-dec-color, 5%);
   border: 2px solid var(--link-dec-color);
   color: var(--link-dec-color);
   transition: all 0.2s linear;
@@ -144,7 +148,7 @@ img {
 
 .partners__photo-box {
   position: relative;
-  width: 122px;
+  max-width: 122px;
 }
 
 .partners__photo {

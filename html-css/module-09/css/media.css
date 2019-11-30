@@ -61,11 +61,7 @@
   .general-title {
     font-size: 52px;
   }
-
-  .general-title-line {
-    display: block;
-  }
-
+ 
   .general-subtitle {
     font-size: 24px;
   }
@@ -110,5 +106,6 @@
   .partners-box {
     padding-top: 68px;
     padding-bottom: 72px;
+  
   }
 }
