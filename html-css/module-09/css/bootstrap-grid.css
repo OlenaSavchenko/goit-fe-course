@@ -50,7 +50,7 @@ html {
     max-width: 1140px;
   }
 }
-it add 
+
 .container-fluid {
   width: 100%;
   padding-right: 10px;
@@ -66,8 +66,6 @@ it add
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
- margin-right: -15px;
- margin-left: -15px;
 }
 
 .no-gutters {
