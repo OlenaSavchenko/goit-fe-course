@@ -96,13 +96,13 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 939px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .partners__item:nth-child(-n + 1),
   .partners__item:nth-child(3n) {
     margin-bottom: 56px;
   }
 }
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 992px) {
   .partners-box {
    padding: 68px 10px 72px;
   }
