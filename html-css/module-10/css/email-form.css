@@ -1,0 +1,82 @@
+.email-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .email-form__field {
+    width: 228px;
+    padding-left: 13px;
+    color: var(--main-text-color);
+    font-family: var(--title-ff);
+    border: 1px solid rgb(229, 229, 229);
+  }
+
+  .email-form__field::-webkit-input-placeholder {
+    color: rgb(204, 204, 204);
+    font-family: var(--text-ff);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  .email-form__field::-moz-placeholder {
+    color: rgb(204, 204, 204);
+    font-family: var(--text-ff);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  .email-form__field:-ms-input-placeholder {
+    color: rgb(204, 204, 204);
+    font-family: var(--text-ff);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  .email-form__field::-ms-input-placeholder {
+    color: rgb(204, 204, 204);
+    font-family: var(--text-ff);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  
+  .email-form__field::placeholder {
+    color: rgb(204, 204, 204);
+    font-family: var(--text-ff);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  
+  .email-form__btn {
+    padding: 13px 34px;
+    -ms-flex-preferred-size: 160px;
+    flex-basis: 160px;
+    background-color: var(--green-dec-color);
+    font-family: var(--title-ff);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+  }
+  
+  .email-form__btn:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  

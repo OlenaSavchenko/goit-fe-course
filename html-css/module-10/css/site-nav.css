@@ -1,0 +1,98 @@
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 24px 0 150px;
+}
+.site-nav__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-preferred-size: 625px;
+  flex-basis: 625px;
+}
+
+.site-nav__link {
+  position: relative;
+  font-family: var(--title-ff);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-text-color);
+  text-transform: uppercase;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--yellow-dec-color);
+  -webkit-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  display: none;
+  margin-top: 8px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--yellow-dec-color);
+  -webkit-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
+  display: block;
+  -webkit-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.site-nav__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.site-nav__icon {
+  width: 18px;
+  fill: var(--light-text-color);
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.site-nav__icon:hover,
+.site-nav__icon:focus {
+  fill: var(--yellow-dec-color);
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.site-nav__icon--cart {
+  height: 15px;
+}
+
+.site-nav__icon--search {
+  height: 18px;
+}

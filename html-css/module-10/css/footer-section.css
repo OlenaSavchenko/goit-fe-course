@@ -1,0 +1,25 @@
+.footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 62px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid rgb(229, 229, 229);
+  }
+  
+  .footer__copyright {
+    text-transform: none;
+  }
+  .footer__author-link {
+    color: var(--red-dec-color);
+  }
+  
+  .footer__author-link:hover {
+    text-decoration: underline;
+  }
+  

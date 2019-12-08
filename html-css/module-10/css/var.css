@@ -1,0 +1,16 @@
+:root {
+    --main-text-color: rgb(51, 51, 51);
+    --light-text-color: rgb(255, 255, 255);
+    --gray-text-color: rgb(153, 153, 153);
+    --green-dec-color: rgb(149, 225, 211);
+    --red-dec-color: rgb(243, 129, 129);
+    --yellow-dec-color: rgb(252, 227, 138);
+    --gradient: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 90%),
+      rgba(243, 129, 129, 90%)
+    );
+    --title-ff: "Montserrat", "Arial", sans-serif;
+    --pretitle-ff: "Kaushan Script", "Arial", cursive;
+    --text-ff: "Roboto", "Arial", sans-serif;
+  }
