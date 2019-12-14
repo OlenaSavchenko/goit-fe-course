@@ -1,0 +1,84 @@
+.services__container {
+  @extend %container;
+  padding-top: 52px;
+  padding-bottom: 88px;
+}
+
+.services__pretitle {
+  @extend %section-pretitle;
+  margin-bottom: 60px;
+  font-size: 24px;
+  color: $main-text-color;
+}
+
+.services__title {
+  @extend %section-title;
+  padding-top: 10px;
+  font-size: 30px;
+  color: $main-text-color;}
+}
+
+.services__title::after {
+  content: '';
+  display: block;
+  margin: 40px auto 0;
+  width: 60px;
+  height: 4px;
+  background-color: $red-dec-color;
+}
+
+.services__list {
+  @extend %list;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  min-height: 236px;
+}
+
+.services__item {
+  position: relative;
+  padding-left: 50px;
+  -ms-flex-preferred-size: 360px;
+  flex-basis: 360px;
+}
+
+.services__subtitle {
+  @extend %section-subtitle;
+  margin-bottom: 12px;
+}
+
+.services__icon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.services__icon--alarm::before {
+  background-image: url(..//../../src/images/icons/alarm.svg);
+}
+.services__icon--line-graph::before {
+  background-image: url(..//../../src/images/icons/line-graph.svg);
+}
+.services__icon--computer::before {
+  background-image: url(..//../../src/images/icons/computer.svg);
+}
+.services__icon--book::before {
+  background-image: url(..//../../src/images/icons/book.svg);
+}
+.services__icon--home::before {
+  background-image: url(..//../../src/images/icons/home.svg);
+}
+.services__icon--frame::before {
+  background-image: url(..//../../src/images/icons/frame.svg);
+}
+
+.services__desc {
+  @extend %section__desc;
+}

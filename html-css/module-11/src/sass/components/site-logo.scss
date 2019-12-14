@@ -1,0 +1,18 @@
+.site-logo {
+  margin: 0;
+}
+
+.site-logo__link {
+  @extend %link;
+  font-family: $title-ff;
+  font-size: 30px;
+  font-weight: 700;
+  color: $light-text-color;
+
+  &:hover {
+    color: $yellow-dec-color;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+  }
+}

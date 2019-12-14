@@ -1,0 +1,82 @@
+.socials {
+  @extend %list;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 380px;
+  height: 470px;
+}
+
+.socials__link {
+  @extend %link;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  background-color: $yellow-dec-color;
+  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $red-dec-color;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+
+  &--facebook::after {
+    background-image: url(../img/svg/icons-sprite.svg#icon-facebook-view);
+  }
+
+  &--twitter::after {
+    background-image: url(../img/svg/icons-sprite.svg#icon-twitter-view);
+  }
+
+  &--pinterest::after {
+    background-image: url(../img/svg/icons-sprite.svg#icon-pinterest-view);
+  }
+  &--instagram::after {
+    background-image: url(../img/svg/icons-sprite.svg#icon-instagram-view);
+  }
+}
+
+.socials__link::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials__item:hover .socials__link--facebook::after,
+.socials__item:focus .socials__link--facebook::after {
+  background-image: url(../img/svg/icons-sprite.svg#icon-facebook--white-view);
+}
+
+.socials__item:hover .socials__link--twitter::after,
+.socials__item:focus .socials__link--twitter::after {
+  background-image: url(../img/svg/icons-sprite.svg#icon-twitter--white-view);
+}
+
+.socials__item:hover .socials__link--pinterest::after,
+.socials__item:focus .socials__link--pinterest::after {
+  background-image: url(../img/svg/icons-sprite.svg#icon-pinterest--white-view);
+}
+.socials__item:hover .socials__link--instagram::after,
+.socials__item:focus .socials__link--instagram::after {
+  background-image: url(../img/svg/icons-sprite.svg#icon-instagram--white-view);
+}
