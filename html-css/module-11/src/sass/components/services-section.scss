@@ -1,3 +1,6 @@
+@import '../helpers/variables.scss';
+@import '../helpers/placeholders.scss';
+
 .services__container {
   @extend %container;
   padding-top: 52px;
@@ -15,7 +18,7 @@
   @extend %section-title;
   padding-top: 10px;
   font-size: 30px;
-  color: $main-text-color;}
+  color: $main-text-color;
 }
 
 .services__title::after {
@@ -61,22 +64,22 @@
 }
 
 .services__icon--alarm::before {
-  background-image: url(..//../../src/images/icons/alarm.svg);
+  background-image: url(../images/icons/alarm.svg);
 }
 .services__icon--line-graph::before {
-  background-image: url(..//../../src/images/icons/line-graph.svg);
+  background-image: url(../images/icons/line-graph.svg);
 }
 .services__icon--computer::before {
-  background-image: url(..//../../src/images/icons/computer.svg);
+  background-image: url(../images/icons/computer.svg);
 }
 .services__icon--book::before {
-  background-image: url(..//../../src/images/icons/book.svg);
+  background-image: url(../images/icons/book.svg);
 }
 .services__icon--home::before {
-  background-image: url(..//../../src/images/icons/home.svg);
+  background-image: url(../images/icons/home.svg);
 }
 .services__icon--frame::before {
-  background-image: url(..//../../src/images/icons/frame.svg);
+  background-image: url(../images/icons/frame.svg);
 }
 
 .services__desc {

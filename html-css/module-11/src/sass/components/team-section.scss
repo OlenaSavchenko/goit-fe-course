@@ -1,3 +1,6 @@
+@import '../helpers/variables.scss';
+@import '../helpers/placeholders.scss';
+
 .team__container {
   @extend %container;
   padding-bottom: 50px;

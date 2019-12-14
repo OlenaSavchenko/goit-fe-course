@@ -1,18 +1,22 @@
+@import '../helpers/variables.scss';
+@import '../helpers/placeholders.scss';
+
 .page-header__background {
   position: relative;
   height: 1000px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(..//../../src/images/banner.jpg);
+  background-image: url(../images/banner.jpg);
 }
+
 
 @media (device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi) {
   .page-header__background {
-    background-image: url(..//../../src/images/banner@2x.jpg);
+    background-image: url(../images/banner@2x.jpg);
   }
 }
 

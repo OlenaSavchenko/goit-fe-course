@@ -1,3 +1,6 @@
+@import '../helpers/variables.scss';
+@import '../helpers/placeholders.scss';
+
 .socials {
   @extend %list;
   display: -webkit-box;
@@ -38,18 +41,18 @@
   }
 
   &--facebook::after {
-    background-image: url(../img/svg/icons-sprite.svg#icon-facebook-view);
+    background-image: url(../images/sprite/icons-sprite.svg#icon-facebook-view);
   }
 
   &--twitter::after {
-    background-image: url(../img/svg/icons-sprite.svg#icon-twitter-view);
+    background-image: url(../images/sprite/icons-sprite.svg#icon-twitter-view);
   }
 
   &--pinterest::after {
-    background-image: url(../img/svg/icons-sprite.svg#icon-pinterest-view);
+    background-image: url(../images/sprite/icons-sprite.svg#icon-pinterest-view);
   }
   &--instagram::after {
-    background-image: url(../img/svg/icons-sprite.svg#icon-instagram-view);
+    background-image: url(../images/sprite/icons-sprite.svg#icon-instagram-view);
   }
 }
 
@@ -64,19 +67,19 @@
 
 .socials__item:hover .socials__link--facebook::after,
 .socials__item:focus .socials__link--facebook::after {
-  background-image: url(../img/svg/icons-sprite.svg#icon-facebook--white-view);
+  background-image: url(../images/sprite/icons-sprite.svg#icon-facebook--white-view);
 }
 
 .socials__item:hover .socials__link--twitter::after,
 .socials__item:focus .socials__link--twitter::after {
-  background-image: url(../img/svg/icons-sprite.svg#icon-twitter--white-view);
+  background-image: url(../images/sprite/icons-sprite.svg#icon-twitter--white-view);
 }
 
 .socials__item:hover .socials__link--pinterest::after,
 .socials__item:focus .socials__link--pinterest::after {
-  background-image: url(../img/svg/icons-sprite.svg#icon-pinterest--white-view);
+  background-image: url(../images/sprite/icons-sprite.svg#icon-pinterest--white-view);
 }
 .socials__item:hover .socials__link--instagram::after,
 .socials__item:focus .socials__link--instagram::after {
-  background-image: url(../img/svg/icons-sprite.svg#icon-instagram--white-view);
+  background-image: url(../images/sprite/icons-sprite.svg#icon-instagram--white-view);
 }
