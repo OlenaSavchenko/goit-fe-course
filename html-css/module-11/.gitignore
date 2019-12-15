@@ -64,3 +64,15 @@ typings/
 .env
 
 *gulp
+
+.README.md
+
+banner.png
+
+.browserslistrc
+
+.prettierrc
+
+*.js
+
+
