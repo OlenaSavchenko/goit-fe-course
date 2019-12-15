@@ -63,16 +63,3 @@ typings/
 # dotenv environment variables file
 .env
 
-*gulp
-
-.README.md
-
-banner.png
-
-.browserslistrc
-
-.prettierrc
-
-*.js
-
-
